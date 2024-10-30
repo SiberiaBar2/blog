@@ -57,3 +57,25 @@ export const useBoolean = (initValue: boolean = false) => {
 
 ```
 
+### 比当前背景颜色更深的颜色
+
+```tex
+需要两层
+
+一层为当前的颜色
+
+一层为黑色
+
+黑色的这一层是包裹层
+
+这样就能有比当前背景更深一些的颜色
+
+网易云、汽水音乐的背景 ，
+
+也是跟这差不多的实现
+
+```
+
+<img src='https://s3.bmp.ovh/imgs/2024/10/30/5ccc78689055219f.png'></img>
+
+<img src='https://s3.bmp.ovh/imgs/2024/10/30/c2dd0a005c6ec80b.png'></img>

@@ -118,3 +118,5 @@ algolia:
     - gallery
     - photos
     - tags
+
+root: /
