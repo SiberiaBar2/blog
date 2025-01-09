@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Queek blog • All posts by \"python学习\" tag",
+    "description": "like dream",
+    "home_page_url": "https://queek.cn",
+    "items": [
+        {
+            "id": "https://queek.cn/2024/12/17/python%E5%AD%A6%E4%B9%A0/",
+            "url": "https://queek.cn/2024/12/17/python%E5%AD%A6%E4%B9%A0/",
+            "title": "python学习",
+            "date_published": "2024-12-17T14:47:04.000Z",
+            "content_html": "",
+            "tags": [
+                "python学习"
+            ]
+        }
+    ]
+}
