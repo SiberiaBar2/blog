@@ -79,11 +79,13 @@ sudo systemctl enable mysql
 
 ```bash
 
+
+# 上传sql文件至服务器
+scp /Users/karlfranz/Desktop/muxisql.sql lighthouse@43.163.113.67:/home/lighthouse/home/sql/
+
 # my_database 是数据库名称（不加 .sql 文件后缀）
-
 # 后面的是服务器存放sql文件的路径 （注意不能少了 < ）
-
-mysql -u root -p my_database < /home/user/yourfile.sql
+mysql -u root -p muxi < /home/lighthouse/home/sql/muxisql.sql
 
 ```
 
@@ -199,5 +201,14 @@ sudo ufw allow 3306/tcp
 
 显示连接成功
 
+```
+
+### 其他
+
+```bash
+
+
+# 查看mysql错误日志
+sudo tail -n 50 /var/log/mysql/error.log
 ```
 

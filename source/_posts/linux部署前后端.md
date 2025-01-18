@@ -62,7 +62,7 @@ sudo ln -s /usr/local/bin/pip3 /usr/bin/pip
 pip freeze > requirements.txt 
 
 # 进入项目代码层级 安装项目依赖
-pip install -r reqguirements.txt
+pip install -r requirements.txt
 
 ```
 
