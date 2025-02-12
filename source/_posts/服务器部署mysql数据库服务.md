@@ -1,8 +1,8 @@
 ---
 title: 服务器部署mysql数据库服务
-date: 2025-01-07 14:29:28
 tags: 部署musql
-
+abbrlink: 74abade9
+date: 2025-01-07 14:29:28
 ---
 
 ### 这里展示腾讯云 Ubuntu系统 （linux）部署mysql服务

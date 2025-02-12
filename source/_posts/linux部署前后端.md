@@ -1,8 +1,8 @@
 ---
 title: linux部署前后端
+tags: linux部署前后端
+abbrlink: 825472bc
 date: 2025-01-11 23:14:04
-tags:  linux部署前后端
-
 ---
 
 ### 部署后端

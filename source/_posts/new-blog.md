@@ -1,6 +1,6 @@
 ---
 title: new-blog
-
+abbrlink: b7ea5631
 ---
 
 因为 hexo上传到github的是编译后的文件，并不是源文件
