@@ -3174,10 +3174,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/dm14.webp);
-    --darkmode-bg:url(https://lskypro.acozycotage.net/Fomalhaut/img/yuanshen1.webp);
-    --mobileday-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/snow.webp);
-    --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
+    --default-bg: url(https://bizhi1.com/wp-content/uploads/2025/02/serene-waterfall-nature-desktop-wallpaper-4k.jpg);
+    --darkmode-bg:url(https://bizhi1.com/wp-content/uploads/2025/02/northern-lights-over-snowy-peaks-desktop-wallpaper-4k.jpg);
+    --mobileday-bg: url(https://bizhi1.com/wp-content/uploads/2025/02/serene-waterfall-nature-desktop-wallpaper-4k.jpg);
+    --mobilenight-bg: url(https://bizhi1.com/wp-content/uploads/2025/02/northern-lights-over-snowy-peaks-desktop-wallpaper-4k.jpg);
   }`;
 }
 // 切换背景主函数
