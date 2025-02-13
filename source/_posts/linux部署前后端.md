@@ -70,9 +70,9 @@ pip install -r requirements.txt
 
 ### 安装配置uwsgi
 
-```tex
+```bash
 
-uWSGI 是一个用于部署 Web 应用程序的服务器，它主要被设计用来托管 Python 应用程序，但也可以支持其他语言（如 Ruby、PHP 等）
+# uWSGI 是一个用于部署 Web 应用程序的服务器，它主要被设计用来托管 Python 应用程序，但也可以支持其他语言（如 Ruby、PHP 等）
 
 ```
 
@@ -98,6 +98,11 @@ static-map=/static/product_images=/home/lighthouse/workspace/muxi_shop_api2/stat
 
 sudo apt install -y uwsgi uwsgi-plugin-python3
 
+# 启动uwsgi
+/home/lighthouse/workspace/muxi_shop_api2/venv/bin/uwsgi --ini /home/lighthouse/workspace/muxi_shop_api2/mu_shop_api/uwsgi.ini
+
+# 停止
+/home/lighthouse/workspace/muxi_shop_api2/venv/bin/uwsgi --stop /home/lighthouse/workspace/muxi_shop_api2/project-master.pid
 ```
 
 ### 打包代码
