@@ -1,6 +1,6 @@
 ---
 layout: linux
-title: 基本操作命令
+title: linux基础操作命令
 date: 2025-02-13 19:54:44
 tags: linux
 
