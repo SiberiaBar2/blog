@@ -52,11 +52,11 @@ copy:
 #   icon: link || the description
 social:
   # Github: https://github.com/fomalhaut1998 || icon-github || faa-tada
-  微信: /assets/QRCode.jpg || icon-weixin || faa-tada
-  QQ: https://res.abeim.cn/api/qq/?qq=1174008660 || icon-QQ || faa-tada
-  B站: https://space.bilibili.com/220757832 || icon-bilibili || faa-tada
-  QQ邮箱: mailto:1174008660@qq.com || icon-youxiang || faa-tada
-  力扣: https://leetcode.cn/u/fomalhaut1998 || icon-leetcode || faa-tada
+  微信: /assets/wechat.jpg || icon-weixin || faa-tada
+  QQ: /assets/qq.jpg || icon-QQ || faa-tada
+  B站: https://space.bilibili.com/303997640?spm_id_from=333.1387.0.0 || icon-bilibili || faa-tada
+  # QQ邮箱: mailto:1174008660@qq.com || icon-youxiang || faa-tada
+  # 力扣: https://leetcode.cn/u/fomalhaut1998 || icon-leetcode || faa-tada
   # 微博: https://weibo.com/u/6473136435 || icon-weibo || faa-tada
   # 知乎: https://www.zhihu.com/people/liang-jia-chao-19 || icon-shejiaotubiao-10 || faa-tada
   # RSS: /atom.xml || icon-RSS || faa-tada
@@ -113,7 +113,7 @@ favicon:
 
 # Avatar (頭像)
 avatar:
-  img: https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp
+  img: https://s3.bmp.ovh/imgs/2025/02/13/48a85ce2a866f522.jpg
   effect: false
 
 # Disable all banner image
@@ -156,7 +156,7 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://source.fomal.cc/img/default_cover_14.webp
+    - https://s3.bmp.ovh/imgs/2025/02/13/48a85ce2a866f522.jpg
     # ...
 
 # A simple 404 page
@@ -705,7 +705,7 @@ aside:
       link: https://github.com/SiberiaBar2
   card_announcement:
     enable: true
-    content: <center><b>--- 主域名 ---<br><a href="https://www.queek.cc" title="此线路部署于Vercel" class="anno_content"><font color="#5ea6e5">queek.cc</font></a>&nbsp;|&nbsp;<a href="https://www.queek.cc" title="此线路部署于Vercel" class="anno_content"><font color="#5ea6e5">fomal.cc</font></a><br>--- 备用域名 ---<br><a href="blog-brown-ten-87.vercel.app" title="此线路部署于Netlify" class="anno_content"><font color="#5ea6e5">queek.cc</font></a><br><a href="blog-brown-ten-87.vercel.app" title="此线路部署于Cloudflare" class="anno_content"><font color="#5ea6e5">queek.cc</font></a><br>--- 网站安卓APP ---<br>🍧<a href="https://lskypro.acozycotage.net/Fomalhaut/Fomalhaut.apk" title="点这里可以下载网站的安卓APP" class="anno_content"><font color="#5ea6e5">点此下载</font></a>🍧</b></center>
+    content: <center><b>--- 主域名 ---<br><a href="https://www.queek.cc" title="此线路部署于Vercel" class="anno_content"><font color="#5ea6e5">queek.cc</font></a>&nbsp;|&nbsp;<a href="https://www.queek.cc" title="此线路部署于Vercel" class="anno_content"><font color="#5ea6e5">queek.cc</font></a><br>--- 备用域名 ---<br><a href="blog-brown-ten-87.vercel.app" title="此线路部署于Netlify" class="anno_content"><font color="#5ea6e5">queek.cc</font></a><br><a href="blog-brown-ten-87.vercel.app" title="此线路部署于Cloudflare" class="anno_content"><font color="#5ea6e5">queek.cc</font></a><br>--- 网站安卓APP ---<br>🍧<a href="https://lskypro.acozycotage.net/Fomalhaut/Fomalhaut.apk" title="点这里可以下载网站的安卓APP" class="anno_content"><font color="#5ea6e5">点此下载</font></a>🍧</b></center>
   card_recent_post:
     enable: false
     limit: 3 # if set 0 will show all
