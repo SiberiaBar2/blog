@@ -262,6 +262,101 @@ tail -f /var/log/nginx/access.log
 
 ```
 
+### 加入证书
+
+```bash
+lighthouse@VM-0-8-ubuntu:~$ sudo cat /etc/nginx/sites-available/queek.work
+# HTTP 请求重定向到 HTTPS
+server {
+    if ($host = www.queek.work) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    if ($host = queek.work) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    listen 80;
+    server_name queek.work www.queek.work;
+
+    # 强制所有 HTTP 请求重定向到 HTTPS
+    return 301 https://$host$request_uri;
+}
+
+# HTTPS 配置
+server {
+    listen 443 ssl;
+    server_name queek.work www.queek.work;
+    ssl_certificate /etc/letsencrypt/live/queek.work/fullchain.pem; # managed by Certbot
+ # 证书路径
+    ssl_certificate_key /etc/letsencrypt/live/queek.work/privkey.pem; # managed by Certbot
+ # 私钥路径
+
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_prefer_server_ciphers on;
+    ssl_ciphers "EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH";
+
+    # 启用 OCSP stapling
+    ssl_stapling on;
+    ssl_stapling_verify on;
+
+    # 设置缓存有效期
+    ssl_session_cache shared:SSL:10m;
+    ssl_session_timeout 10m;
+
+    # 日志设置
+    access_log /var/log/nginx/queek.work.access.log;
+    error_log /var/log/nginx/queek.work.error.log;
+
+    # 反向代理配置
+    location /api/ {
+        proxy_pass http://localhost:8000/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location /static/product_images/ {
+        alias /home/lighthouse/workspace/muxi_shop_api2/static/product_images/;
+        expires max;
+        add_header Cache-Control "public";
+        try_files $uri $uri/ =404;
+    }
+
+    # 前端应用配置
+    location / {
+        root /home/lighthouse/workspace/small_u-shopping_mall/;  # 这是你上传 dist 文件夹的路径
+        index index.html;
+        try_files $uri /index.html;  # Vue SPA路由需要此配置
+    }
+    location /shopmall/ { 
+        alias /home/lighthouse/workspace/small_u-shopping_mall/;  # 这是你上传 dist 文件夹的路径 
+        index index.html;
+	try_files $uri /index.html; 
+    } 
+    location /welcome {
+        alias /home/lighthouse/workspace/html/;
+        index test.html;
+    }
+    location /pet {
+        alias /home/lighthouse/workspace/html/liuhuan/;
+        index pet.html;
+    }
+    # location /def/ {
+    #    alias /home/lighthouse/workspace/frontend_def/dist/;
+    #    index index.html;
+    #    try_files $uri $uri/ /index.html;
+    # }
+
+
+}
+lighthouse@VM-0-8-ubuntu:~$ 
+
+```
+
 ### 其他
 
 ```bash
