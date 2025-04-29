@@ -13,7 +13,7 @@ description:
 ### useIsFirstRender
 
 ```tex
-这个hook 会在首次渲染的时候返回一个布尔值 为true
+这个hook 会在首次渲染的时候返回一个为true的布尔值 
 
 为什么需要这个hook？
 
@@ -24,21 +24,24 @@ description:
 export const useIsFirstRender = (deps: [] as unknown[], noDeps: [] as unknown[]) => {
   const isFirstRender = useRef(false)
   
-  /**为什么需要指定依赖项？
+  /**
   * 
-    页面首次渲染可能会更新多次 多个状态或props的先后更新会导致 即便是首次加载页面 组件也会多次更新
-    
-    这将会导致我们的hook记录失效！ß
-    
-    因此 只在我们指定的状态更新才开始计数。
+  * 为什么需要指定依赖项？
+  * 
+  * 页面首次渲染可能会更新多次 多个状态或props的先后更新会导致 即便是首次加载页面 组件也会多次更新
+  *  
+  * 这将会导致我们的hook记录失效！ß
+  *  
+  * 因此 只在我们指定的状态更新才开始计数。
   */
   useEffect(() => {
     isFirstRender.current = false;
   },[...deps])
   
-    /**在有些状态变化的情况下
-  * 
-		我们依然希望使用默认的初始值，这个时候你应该指定这些变量，来在他们更新时，返回true来保证使用的仍然是初始值
+  /**
+  * 在有些状态变化的情况下
+  *
+	* 我们依然希望使用默认的初始值，这个时候你应该指定这些变量，来在他们更新时，返回true来保证使用的仍然是初始值
   */
   useEffect(() => {
     isFirstRender.current = true;
