@@ -111,3 +111,30 @@ export const useDepsNoRender = (callback: () => void, deps: unknown[], firstRend
 }
 ```
 
+### usePerformanceModel
+
+```tex
+简化umi useModel 的取值 有类型提示
+```
+
+```tsx
+import { useModel } from 'umi';
+// Parameters 利用提取 useModel 第一个参数，来取到所有的 ModelName
+type ModelNames = Parameters<typeof useModel>[0];
+// 根据指定的 ModelName 来拿到 useModel 的返回值（对应的 model state）
+type ModelState<N extends ModelNames> = ReturnType<typeof useModel<N>>;
+
+export const usePerformanceModel = <N extends ModelNames, K extends keyof ModelState<N>>(
+  modelName: N,
+  keys: K[]
+) => {
+  return useModel(modelName, (state) => {
+    return keys.reduce((prev, key) => {
+      if (prev[key]) return prev;
+      prev[key] = state[key];
+      return prev;
+    }, {} as Pick<ModelState<N>, K>);
+  });
+};
+```
+
