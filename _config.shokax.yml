@@ -50,6 +50,8 @@ modules:
   quiz: true # 启用文章内问题扩展支持
   fancybox: true # 启用 fancybox 支持（不建议禁用）
 
+lazyload:
+  enable: false  # 关闭懒加载
 # 优化性能区
 performance:
   # 使用preconnect预加载的网址(不建议超过三个)
