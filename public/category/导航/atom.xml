@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://queek.cn</id>
+    <title>Queek blog • Posts by &#34;导航&#34; category</title>
+    <link href="https://queek.cn" />
+    <updated>2024-12-09T10:19:03.000Z</updated>
+    <category term="reacthook" />
+    <category term="date" />
+    <category term="linux部署前后端" />
+    <category term="linux" />
+    <category term="后端" />
+    <category term="xlsx" />
+    <entry>
+        <id>https://queek.cn/2024/12/09/old-blog/</id>
+        <title>旧的博客地址</title>
+        <link rel="alternate" href="https://queek.cn/2024/12/09/old-blog/"/>
+        <content type="html">&lt;p&gt;因为 hexo上传到github的是编译后的文件，并不是源文件&lt;/p&gt;
+&lt;p&gt;之前的代码丢失无法恢复，所以重新创建了网站&lt;/p&gt;
+&lt;p&gt;旧的地址&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://karlfranz.cn/&#34;&gt;https://karlfranz.cn/&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="date" />
+        <updated>2024-12-09T10:19:03.000Z</updated>
+    </entry>
+</feed>

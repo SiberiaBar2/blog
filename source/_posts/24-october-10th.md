@@ -1,8 +1,14 @@
 ---
 title: 24-october-10th
+tags:
+  - date
+categories:
+  - 日常
+sticky: 2
+swiper_index: 2
+abbrlink: 4a6f3763
 date: 2024-10-12 16:32:47
-tags: date
-
+updated: 2025-02-13 18:25:00
 ---
 
 ### 任务

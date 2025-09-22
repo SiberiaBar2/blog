@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Queek blog • All posts by \"导航\" category",
+    "description": "like dream",
+    "home_page_url": "https://queek.cn",
+    "items": [
+        {
+            "id": "https://queek.cn/2024/12/09/old-blog/",
+            "url": "https://queek.cn/2024/12/09/old-blog/",
+            "title": "旧的博客地址",
+            "date_published": "2024-12-09T10:19:03.000Z",
+            "content_html": "<p>因为 hexo上传到github的是编译后的文件，并不是源文件</p>\n<p>之前的代码丢失无法恢复，所以重新创建了网站</p>\n<p>旧的地址</p>\n<p><a href=\"https://karlfranz.cn/\">https://karlfranz.cn/</a></p>\n",
+            "tags": [
+                "date"
+            ]
+        }
+    ]
+}
